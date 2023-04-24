@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="627.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyPartController">
+    <children>
+        <Label layoutX="65.0" layoutY="37.0" text="Modify Part">
+            <font>
+                <Font name="Arial Bold" size="15.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="modifyRadioInHouse" layoutX="192.0" layoutY="36.0" mnemonicParsing="false" onAction="#onModInHouse" selected="true" text="In-House">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="ToggleModPart" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="modifyRadioOutSource" layoutX="300.0" layoutY="36.0" mnemonicParsing="false" onAction="#onModOutSourced" text="Outsourced" toggleGroup="$ToggleModPart">
+            <font>
+                <Font name="Arial" size="13.0" />
+            </font>
+        </RadioButton>
+        <Label fx:id="modifyPartID" layoutX="65.0" layoutY="128.0" text="ID">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="modifyPartName" layoutX="63.0" layoutY="175.0" text="Name">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="modifyPartInv" layoutX="62.0" layoutY="223.0" text="Inv">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="modifyPartPrice" layoutX="62.0" layoutY="268.0" text="Price/Cost">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="modifyPartMax" layoutX="62.0" layoutY="314.0" text="Max">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="modifyPartMachId" layoutX="62.0" layoutY="363.0" text="Machine ID">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="modifyPartIDField" editable="false" layoutX="167.0" layoutY="124.0" prefHeight="25.0" prefWidth="113.0" style="-fx-opacity: 50%;" />
+        <TextField fx:id="modifyPartNameField" layoutX="167.0" layoutY="171.0" prefHeight="25.0" prefWidth="113.0" />
+        <TextField fx:id="modifyPartInvField" layoutX="167.0" layoutY="219.0" prefHeight="25.0" prefWidth="113.0" />
+        <TextField fx:id="modifyPartPriceField" layoutX="167.0" layoutY="264.0" prefHeight="25.0" prefWidth="113.0" />
+        <TextField fx:id="modifyPartMaxField" layoutX="167.0" layoutY="310.0" prefHeight="25.0" prefWidth="113.0" />
+        <TextField fx:id="modifyPartMachField" layoutX="167.0" layoutY="359.0" prefHeight="25.0" prefWidth="113.0" />
+        <Label fx:id="modifyPartMin" layoutX="332.0" layoutY="314.0" text="Min">
+            <font>
+                <Font name="Arial Bold" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="modifyPartMinField" layoutX="368.0" layoutY="310.0" prefHeight="25.0" prefWidth="113.0" />
+        <Button fx:id="modifyPartSave" layoutX="274.0" layoutY="438.0" mnemonicParsing="false" onAction="#onModPartSave" text="Save" />
+        <Button fx:id="modifyPartCancel" layoutX="329.0" layoutY="438.0" mnemonicParsing="false" onAction="#onModifyPartCancel" text="Cancel" />
+    </children>
+</AnchorPane>
